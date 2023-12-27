@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/menuScreen">
+
+    <fragment
+        android:id="@+id/menuScreen"
+        android:name="uz.isystem.testgame.presentation.menu_screen.MenuScreen"
+        android:label="screen_menu"
+        tools:layout="@layout/screen_menu" >
+        <action
+            android:id="@+id/action_menuScreen_to_gameScreen"
+            app:destination="@id/gameScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameScreen"
+        android:name="uz.isystem.testgame.presentation.game_screen.GameScreen"
+        android:label="screen_game"
+        tools:layout="@layout/screen_game" >
+        <action
+            android:id="@+id/action_gameScreen_to_resultScreen"
+            app:destination="@id/resultScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultScreen"
+        android:name="uz.isystem.testgame.presentation.result_screen.ResultScreen"
+        android:label="screen_result"
+        tools:layout="@layout/screen_result" >
+        <action
+            android:id="@+id/action_resultScreen_to_gameScreen"
+            app:destination="@id/gameScreen" />
+        <action
+            android:id="@+id/action_resultScreen_to_menuScreen"
+            app:destination="@id/menuScreen" />
+        <argument
+            android:name="coin"
+            app:argType="integer" />
+        <argument
+            android:name="time"
+            app:argType="integer" />
+    </fragment>
+</navigation>

@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.game_screen.GameScreen">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="1dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_alarm" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:elevation="0dp"
+                app:cardBackgroundColor="#959595"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="00:00"
+                        android:id="@+id/timer"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="20dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/circle_shape" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/coins"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="5">
+
+            <View
+                android:id="@+id/curtain1"
+                style="@style/curtainStyle"
+                android:tag="1"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <View
+                android:id="@+id/curtain2"
+                style="@style/curtainStyle"
+                android:tag="2"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain3"
+                android:tag="3"
+                style="@style/curtainStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain4"
+                style="@style/curtainStyle"
+                android:tag="4"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain5"
+                style="@style/curtainStyle"
+                android:tag="5"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain6"
+                style="@style/curtainStyle"
+                android:tag="6"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain7"
+                style="@style/curtainStyle"
+                android:tag="7"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain8"
+                style="@style/curtainStyle"
+                android:tag="8"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain9"
+                style="@style/curtainStyle"
+                android:layout_marginEnd="10dp"
+                android:tag="9"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain10"
+                android:tag="10"
+                style="@style/curtainStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain11"
+                style="@style/curtainStyle"
+                android:tag="11"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain12"
+                android:tag="12"
+                style="@style/curtainStyle"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain13"
+                android:tag="13"
+                style="@style/curtainStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain14"
+                android:tag="14"
+                style="@style/curtainStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain15"
+                android:tag="15"
+                style="@style/curtainStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain16"
+                android:tag="16"
+                style="@style/curtainStyle"
+                android:layout_marginBottom="10dp" />
+
+            <View
+                android:id="@+id/curtain17"
+                android:tag="17"
+                style="@style/curtainStyle"
+                android:layout_marginEnd="10dp" />
+
+            <View
+                android:id="@+id/curtain18"
+                android:tag="18"
+                style="@style/curtainStyle"
+                android:layout_marginEnd="10dp" />
+
+            <View
+                android:id="@+id/curtain19"
+                android:tag="19"
+                style="@style/curtainStyle"
+                android:layout_marginEnd="10dp" />
+
+            <View
+                android:id="@+id/curtain20"
+                android:tag="20"
+                style="@style/curtainStyle" />
+
+        </GridLayout>
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/column"
+            android:columnCount="4"
+            android:rowCount="5">
+
+            <ImageView
+                android:id="@+id/item1"
+                style="@style/imageViewStyle"
+                android:tag="1"
+                android:alpha="0"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageView
+                android:id="@+id/item2"
+                style="@style/imageViewStyle"
+                android:tag="2"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item3"
+                android:tag="3"
+                style="@style/imageViewStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item4"
+                style="@style/imageViewStyle"
+                android:tag="4"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item5"
+                style="@style/imageViewStyle"
+                android:tag="5"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item6"
+                style="@style/imageViewStyle"
+                android:tag="6"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item7"
+                style="@style/imageViewStyle"
+                android:tag="7"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item8"
+                style="@style/imageViewStyle"
+                android:tag="8"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item9"
+                style="@style/imageViewStyle"
+                android:layout_marginEnd="10dp"
+                android:tag="9"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item10"
+                android:tag="10"
+                style="@style/imageViewStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item11"
+                style="@style/imageViewStyle"
+                android:tag="11"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item12"
+                android:tag="12"
+                style="@style/imageViewStyle"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item13"
+                android:tag="13"
+                style="@style/imageViewStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item14"
+                android:tag="14"
+                style="@style/imageViewStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item15"
+                android:tag="15"
+                style="@style/imageViewStyle"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item16"
+                android:tag="16"
+                style="@style/imageViewStyle"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:id="@+id/item17"
+                android:tag="17"
+                style="@style/imageViewStyle"
+                android:layout_marginEnd="10dp" />
+
+            <ImageView
+                android:id="@+id/item18"
+                android:tag="18"
+                style="@style/imageViewStyle"
+                android:layout_marginEnd="10dp" />
+
+            <ImageView
+                android:id="@+id/item19"
+                android:tag="19"
+                style="@style/imageViewStyle"
+                android:layout_marginEnd="10dp" />
+
+            <ImageView
+                android:id="@+id/item20"
+                android:tag="20"
+                style="@style/imageViewStyle" />
+
+        </GridLayout>
+
+    </FrameLayout>
+</FrameLayout>

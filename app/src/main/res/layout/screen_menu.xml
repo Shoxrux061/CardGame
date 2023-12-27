@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.menu_screen.MenuScreen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="20dp"
+            android:background="@drawable/circle_shape"
+            android:layout_marginEnd="10dp"
+            android:layout_height="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:id="@+id/coin_count"
+            android:fontFamily="sans-serif-black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="0dp"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="140dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/crystal"
+            android:layout_height="140dp"/>
+        </androidx.cardview.widget.CardView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Play"
+            android:minWidth="120dp"
+            android:textSize="22sp"
+            android:textAllCaps="true"
+            android:id="@+id/play_btn"
+            android:backgroundTint="#8347EC"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</FrameLayout>
